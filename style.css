@@ -140,3 +140,11 @@ footer {
     display: block;
   }
 }
+.produce-img {
+  width: 100%;           /* full width inside the box */
+  max-width: 400px;      /* optional: limit size */
+  display: block;
+  margin: 10px auto;     /* center image */
+  border-radius: 10px;   /* rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* subtle shadow */
+}
