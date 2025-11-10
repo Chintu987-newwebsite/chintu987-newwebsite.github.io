@@ -83,3 +83,60 @@ footer {
   padding: 20px 0;
   margin-top: 40px;
 }
+/* ===== Responsive Nav ===== */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(45, 106, 79, 0.8);
+}
+
+.nav-logo {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(64, 145, 108, 0.9);
+  border-radius: 5px;
+}
+
+/* Hamburger toggle button */
+.nav-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Mobile Styles ===== */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* hide menu by default */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
